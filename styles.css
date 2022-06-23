@@ -39,3 +39,8 @@ footer ul {
     margin-left: 50px;
 }
 
+a.socials:link,
+a.socials:visited {
+    text-decoration: none;
+    color: black;
+}
