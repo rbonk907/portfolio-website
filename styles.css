@@ -29,3 +29,14 @@ footer ul {
     list-style-type: none;
 }
 
+.profile {
+    display: flex;
+}
+
+.profile-img {
+    width: 25%;
+    /* border-radius: 50%; */
+    display: block;
+    margin-left: 50px;
+}
+
