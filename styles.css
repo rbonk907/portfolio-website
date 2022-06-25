@@ -14,10 +14,21 @@ ul.menu {
     color: black;
 }
 
+header {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
 header li {
     padding: 10px;
     margin-left: 20px;
     list-style-type: none;
+}
+
+main {
+    padding-top: 30px;
 }
 
 p {
@@ -48,4 +59,9 @@ a.socials:link,
 a.socials:visited {
     text-decoration: none;
     color: black;
+}
+
+.banner {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
