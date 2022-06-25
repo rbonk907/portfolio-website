@@ -9,6 +9,11 @@ ul.menu {
     justify-content: flex-end;
 }
 
+.menu a:link {
+    text-decoration: none;
+    color: black;
+}
+
 header li {
     padding: 10px;
     margin-left: 20px;
