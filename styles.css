@@ -1,38 +1,62 @@
+/* whole page styles */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-ul.menu {
-    display: flex;
-    justify-content: flex-end;
+:root {
+    --header-height: 50px;
 }
 
+
+main {
+    padding-top: var(--header-height);
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
 }
 
+p {
+    margin: 20px 10px;
+}
+
+main li {
+    margin-left: 20px;
+}
+
+/* header styles */
 header {
     position: fixed;
+    height: var(--header-height);
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
+ul.menu {
+    display: flex;
+    justify-content: flex-end;
+}
 
-header li {
+ul.menu li {
     padding: 10px;
     margin-left: 20px;
     list-style-type: none;
 }
 
-main {
-    padding-top: 30px;
+.menu a:link {
+    text-decoration: none;
+    color: black;
 }
 
-p {
-    margin: 20px 10px;
+/* section styles */
+section {
+    border: 1px solid black;
 }
 
 
@@ -48,19 +72,36 @@ p {
     margin-left: 50px;
 }
 
+/* hero banner styling */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 64px;
+    color: rgb(74, 74, 74);
+}
+
+h1 span {
+    color: rgb(62, 62, 240);
+}
+
+h1 div:last-of-type {
+    display: block;
+}
+
+/* footer styles */
+footer ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-}
-
-.profile {
-    display: flex;
-}
-
-.profile-img {
-    width: 25%;
-    display: block;
-    margin-left: 50px;
 }
 
 a.socials:link,
