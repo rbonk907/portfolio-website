@@ -9,9 +9,9 @@ ul.menu {
     justify-content: flex-end;
 }
 
-.menu a:link {
-    text-decoration: none;
-    color: black;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 header {
@@ -35,11 +35,19 @@ p {
     margin: 20px 10px;
 }
 
-main li {
-    margin-left: 20px;
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer ul {
+.profile-img {
+    display: block;
+    margin-left: 50px;
+}
+
     display: flex;
     justify-content: space-around;
     list-style-type: none;
@@ -61,7 +69,6 @@ a.socials:visited {
     color: black;
 }
 
-.banner {
-    padding-top: 50px;
-    padding-bottom: 50px;
+.description {
+    width: 900px;
 }
