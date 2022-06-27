@@ -76,9 +76,20 @@ ul.menu li {
     align-items: center;
 }
 
+.img-container {
+    border: 5px solid rgb(62, 62, 240);
+    border-radius: 10px;
+    margin-left: 50px;
+    
+} 
+
 .profile-img {
     display: block;
-    margin-left: 50px;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    /* margin-left: 50px; */
 }
 
 .description {
