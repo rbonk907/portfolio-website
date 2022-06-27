@@ -1,10 +1,11 @@
 /* whole page styles */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 :root {
@@ -26,8 +27,8 @@ p {
     margin: 20px 10px;
 }
 
-main li {
-    margin-left: 20px;
+h2 {
+    padding: 50px 0;
 }
 
 /* header styles */
@@ -44,8 +45,8 @@ ul.menu {
 }
 
 ul.menu li {
-    padding: 10px;
-    margin-left: 20px;
+    padding: 10px 20px;
+    /* margin-left: 20px; */
     list-style-type: none;
 }
 
@@ -55,10 +56,16 @@ ul.menu li {
     color: black;
 }
 
-/* section styles */
-section {
-    border: 1px solid black;
+.menu li:hover {
+    background-color: rgba(180, 180, 180, 0.336);
+    border-bottom: 2px solid rgb(62, 62, 240);
+
 }
+
+/* section styles */
+/* section {
+    border: 1px solid black;
+} */
 
 
 .profile {
@@ -71,6 +78,10 @@ section {
 .profile-img {
     display: block;
     margin-left: 50px;
+}
+
+.description {
+    width: 900px;
 }
 
 /* hero banner styling */
@@ -98,6 +109,61 @@ h1 div:last-of-type {
     display: block;
 }
 
+/* work exerperience styles */
+
+.container {
+    /* margin: 50px auto; */
+    max-width: 700px;
+    width: 100%;
+    /* border: 1px solid black; */
+  /*   border-radius: 10px; */
+  }
+  
+.tab-list ul {
+list-style-type: none;
+display: flex;
+margin: 0;
+}
+
+.tab-list button {
+border: none;
+padding: 20px 50px;
+margin: 0;
+border-bottom: 2px solid gray;
+background-color: #fff;
+}
+
+.tab-list button:hover {
+background-color: #f0f0f0;
+}
+
+.tab-list button:focus {
+/*   background-color: #f0f0f0; */
+outline: none;
+border-bottom: 2px solid blue;
+/*   outline: none; */
+/*   border: none; */
+}
+
+/* .jobs {
+height: 500px;
+} */
+
+.jobs div {
+display: none;
+}
+
+.jobs div:first-of-type {
+    display: block;
+}
+
+.job ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 /* footer styles */
 footer ul {
     display: flex;
@@ -111,6 +177,3 @@ a.socials:visited {
     color: black;
 }
 
-.description {
-    width: 900px;
-}
