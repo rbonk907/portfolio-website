@@ -68,33 +68,44 @@ ul.menu li {
     border: 1px solid black;
 } */
 
+section {
+    height: 100vh;
+}
 
-.profile {
+/* .profile {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+} */
+
+.profile {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
 }
 
-.img-container {
+/* .img-container {
     border: 5px solid rgb(62, 62, 240);
     border-radius: 10px;
     margin-left: 50px;
     
-} 
+}  */
 
-.profile-img {
+.img-container img {
+    width: 100%;
     display: block;
-    position: relative;
+    /* position: relative;
     bottom: 20px;
-    right: 20px;
+    right: 20px; */
     border-radius: 10px;
-    /* margin-left: 50px; */
 }
 
-.description {
+/* .description {
     width: 900px;
-}
+    margin-bottom: 50px;
+} */
 
 /* hero banner styling */
 .banner {
@@ -109,7 +120,7 @@ ul.menu li {
 
 h1 {
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 64px;
+    font-size: clamp(40px, 8vw, 80px);
     color: rgb(74, 74, 74);
 }
 
@@ -134,6 +145,7 @@ h1 div:last-of-type {
 .tab-list ul {
 list-style-type: none;
 display: flex;
+overflow-x: auto;
 margin: 0;
 }
 
@@ -141,17 +153,21 @@ margin: 0;
 border: none;
 padding: 20px 50px;
 margin: 0;
-border-bottom: 2px solid gray;
+/* border-bottom: 2px solid gray; */
 background-color: #fff;
+width: max-content;
 }
 
 .tab-list button:hover {
 background-color: #f0f0f0;
 }
 
-.tab-list button:focus {
+.tab-list li {
+    border-bottom: 2px solid gray;
+}
+
+.tab-list li:first-of-type {
 /*   background-color: #f0f0f0; */
-outline: none;
 border-bottom: 2px solid blue;
 /*   outline: none; */
 /*   border: none; */
@@ -189,3 +205,9 @@ a.socials:visited {
     color: black;
 }
 
+@media only screen and (max-width: 600px) {
+    .profile {
+        display: block;
+    }
+    
+}

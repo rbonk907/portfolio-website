@@ -10,10 +10,13 @@ function addText(event) {
   // document.querySelector('.jobs').innerHTML += window.getComputedStyle(description);
   if (window.getComputedStyle(description).display === 'none') {
     let jobs = document.getElementsByClassName('job');
+    let tabs = document.getElementsByClassName('tab');
     // jobs.forEach(job => job.style.display = 'none');
     for (let i = 0; i < jobs.length; i++) {
       jobs[i].style.display = 'none';
+      tabs[i].style.borderBottom = '2px solid gray';
     }
+    event.currentTarget.parentNode.style.borderBottom = '2px solid blue';
     description.style.display = 'block';
   }
   
