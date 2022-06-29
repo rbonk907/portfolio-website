@@ -139,14 +139,20 @@ main {
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 50px;
 }
 
 p {
-    margin: 20px 10px;
+    margin: 20px 0px;
 }
 
 h2 {
     padding: 50px 0;
+    margin-top: 100px;
+}
+
+#about h2 {
+    margin-top: 0;
 }
 
 /* header styles */
@@ -234,10 +240,21 @@ ul.menu li {
     border-radius: 10px;
 }
 
-/* .description {
-    width: 900px;
-    margin-bottom: 50px;
-} */
+.description li {
+    list-style-position: inside;
+    list-style-type: none;
+    padding-left: 1.3em;
+}
+
+.description li::before {
+    content: '\f120'; /* FontAwesome terminal unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    color: rgb(62, 62, 240);
+    margin-left: -1.3em;
+    width: 1.3em;
+    padding-right: 10px;
+}
 
 /* hero banner styling */
 .banner {
@@ -290,8 +307,10 @@ h1 div:last-of-type {
 .tab-list ul {
 list-style-type: none;
 display: flex;
+justify-content: space-evenly;
 overflow-x: auto;
 margin: 0;
+/* border-bottom: 2px solid gray; */
 }
 
 .tab-list button {
@@ -299,16 +318,18 @@ border: none;
 padding: 20px 50px;
 margin: 0;
 /* border-bottom: 2px solid gray; */
-background-color: #fff;
+background-color: transparent;
 width: max-content;
 }
 
-.tab-list button:hover {
+.tab-list .tab:hover {
 background-color: #f0f0f0;
 }
 
 .tab-list li {
     border-bottom: 2px solid gray;
+    width: 100%;
+    text-align: center;
 }
 
 .tab-list li:first-of-type {
@@ -333,6 +354,27 @@ display: none;
 .job ul {
     display: flex;
     flex-direction: column;
+}
+
+.job li {
+    list-style-position: inside;
+    list-style-type: none;
+    padding-left: 1.3em;
+    padding-top: 15px;
+
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+
+.job li::before {
+    content: '\f120'; /* FontAwesome terminal unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    color: rgb(62, 62, 240);
+    margin-left: -1.3em;
+    width: 1.3em;
+    padding-right: 10px;
+    padding-top: 10px;
 }
 
 
