@@ -250,14 +250,27 @@ h1 {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: clamp(40px, 8vw, 80px);
     color: rgb(74, 74, 74);
+    /* transition-delay: 200ms; */
+
+    
 }
 
 h1 span {
     color: rgb(62, 62, 240);
 }
 
+h1 div:first-of-type {
+    /* fade in animation */
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    animation: fadein 2s;
+}
+
 h1 div:last-of-type {
     display: block;
+
+    /* fade in animation */
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    animation: fadein 2s;
 }
 
 /* work exerperience styles */
@@ -361,4 +374,14 @@ a.socials:visited {
         display: flex;
     }
 
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   {opacity: 1;}
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
