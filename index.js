@@ -4,7 +4,8 @@ let btn3 = document.getElementById('btn-3');
 // let btn4 = document.getElementById('btn-4');
 
 const menu = document.querySelector('.hamburger-icon span');
-const closeMenu = document.querySelector('.close-icon')
+const closeMenu = document.querySelector('.close-icon');
+const navbarLink = document.querySelectorAll('.sidebar-nav li');
 
 
 function showNav(event) {
@@ -13,9 +14,12 @@ function showNav(event) {
   closeMenu.classList.remove('hidden');
   aside.classList.remove('hidden');
   document.querySelector('body').classList.add('blur');
+
+  const content = document.querySelector('.content');
+  content.addEventListener("click", hideNav);
 }
 
-function hideNav(event) {
+function hideNav() {
   const aside = document.querySelector('.sidebar-wrapper');
   aside.classList.add('hidden');
   closeMenu.classList.add('hidden');
@@ -51,3 +55,7 @@ btn1.addEventListener("click", addText);
 btn2.addEventListener("click", addText);
 btn3.addEventListener("click", addText);
 // btn4.addEventListener("click", addText);
+
+for(let i = 0; i < (navbarLink.length - 1); i++) {
+  navbarLink[i].addEventListener("click", hideNav);
+}

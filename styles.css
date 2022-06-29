@@ -110,6 +110,10 @@
     color: #fff;
 }
 
+.sidebar-nav a:active {
+    background-color: #2e6bc2be;
+}
+
 .sidebar-nav a.resume:link,
 .sidebar-nav a.resume:visited {
     color: rgb(37, 37, 183);
