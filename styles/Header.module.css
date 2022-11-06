@@ -1,0 +1,45 @@
+.header {
+    position: sticky;
+    top: 0px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #fff;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li {
+    padding: 10px 20px;
+    list-style-type: none;
+}
+
+.menu a:link,
+.menu a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.menu li:hover {
+    background-color: rgba(180, 180, 180, 0.336);
+    border-bottom: 2px solid rgb(62, 62, 240);
+
+}
+
+.menu li:last-of-type:hover {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.menu a.resume:link, 
+.menu a.resume:visited {
+    color:rgb(62, 62, 240);
+    border: 2px solid rgb(62, 62, 240);
+    padding: 5px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
