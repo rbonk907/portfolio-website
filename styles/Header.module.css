@@ -5,7 +5,7 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    background-color: #fff;
+    background-color: inherit;
 }
 
 .menu {

@@ -1,0 +1,70 @@
+.bio {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bioInfo {
+    border: 1px solid green;
+    width: 40%;
+}
+
+.bioCard {
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    /* border: 1px solid red; */
+    box-shadow: 10px 10px 20px #aeaec0ff, -3px -3px 10px #FFFFFF;
+}
+
+.bioCard h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.imgContainer {
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.imgContainer .bioPic {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+}
+
+.highlightList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    padding: 0 20px;
+    margin-top: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+ 
+.bioHighlight {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 5px 5px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    box-shadow: inset 2px 2px 5px #aeaec0ca, inset -2px -3px 3px #ffffff;
+}
+
+.bioHighlight::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-right: 10px;
+}
