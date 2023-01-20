@@ -7,7 +7,7 @@ const Bio = ({ lexend }) => {
     const skillList = ["C/C++", "VHDL", "NodeJS"];
     
     return (
-        <div className={`${styles.bio} ${lexend.className}`}>
+        <div className={`${styles.bio}`}>
             <div className={styles.bioInfo}>
                 <h2>About me</h2>
                 <p>

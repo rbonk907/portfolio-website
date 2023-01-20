@@ -1,0 +1,88 @@
+.ml8 {
+    margin-left: 8px;
+}
+
+.mr16 {
+    margin-right: 16px;
+}
+
+.svg12 {
+    width: 12px;
+    height: 12px;
+}
+
+.svg18 {
+    width: 18px;
+    height: 18px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexCenter {
+    align-items: center;
+}
+
+.heroBanner {
+    width: 100%;
+    height: calc(100vh - 50px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid red;
+}
+
+.heroBanner h1 {
+    display: block;
+    margin-left: 5%;
+}
+
+.heroBanner h2 {
+    margin-left: 5%;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    width: 100%;
+}
+
+.socials ul {
+    display: flex;
+    list-style: none;
+    margin-left: -16px;
+    width: 100%;
+}
+
+.socials li {
+    margin: 0 16px;
+}
+
+/* .socials svg {
+    width: 18px;
+    height: 18px;
+} */
+
+.socials span {
+    font-size: 14px;
+}
+
+
+.imageContainer img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 999px;
+}
+
+.imageContainer {
+    min-width: 48px;
+    width: 56px;
+    height: 56px;
+    border-radius: 999px;
+    margin-right: 32px;
+}

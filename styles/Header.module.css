@@ -6,6 +6,7 @@
     justify-content: flex-end;
     width: 100%;
     background-color: inherit;
+    border: 1px solid red;
 }
 
 .menu {
@@ -30,16 +31,18 @@
 
 }
 
+.menu li:last-of-type {
+    background-color: blue;
+}
+
 .menu li:last-of-type:hover {
-    background-color: transparent;
-    border-bottom: none;
+    background-color: rgba(180, 180, 180, 0.336);
+    border-bottom: 2px solid rgb(62, 62, 240);
 }
 
 .menu a.resume:link, 
 .menu a.resume:visited {
-    color:rgb(62, 62, 240);
-    border: 2px solid rgb(62, 62, 240);
+    color:#FFF;
     padding: 5px;
     padding-bottom: 10px;
-    border-radius: 10px;
 }

@@ -3,8 +3,11 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Header from '../components/header'
 import Bio from '../components/bio'
+import HeroBanner from '../components/hero-banner'
 
 import { Lexend } from '@next/font/google';
+import Projects from '../components/projects'
+import Experience from '../components/experience'
 
 const lexend = Lexend({ subsets: ['latin'] });
 
@@ -21,7 +24,10 @@ export default function Home() {
       <Header />
 
       <main className={`${styles.main}`}>
+        <HeroBanner lexend={lexend} />
         <Bio lexend={lexend} />
+        <Projects />
+        <Experience />
       </main>
 
       <footer className={styles.footer}>
