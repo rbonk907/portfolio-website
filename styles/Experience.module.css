@@ -1,3 +1,23 @@
 .experience {
     width: 100%;
 }
+
+.experience h2 {
+    position: sticky;
+    top: 0px;
+    padding-top: 10px;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+
+.jobCompany span {
+    display: block;
+}
+
+.jobCompany .date {
+    margin-bottom: 20px;
+}
+
+.jobDescription {
+    margin-bottom: 20px;
+}
