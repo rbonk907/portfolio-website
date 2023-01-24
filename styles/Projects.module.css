@@ -1,5 +1,15 @@
+.sticky {
+    position: sticky;
+    top: 0px;
+}
+
 .projectContainer {
     width: 100%;
+}
+
+.projectContainer h2 {
+    padding-top: 10px;
+    z-index: 2;
 }
 
 .projects {

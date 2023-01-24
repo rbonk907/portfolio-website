@@ -32,16 +32,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .heroBanner h1 {
     display: block;
-    margin-left: 5%;
 }
 
 .heroBanner h2 {
-    margin-left: 5%;
+    display: block;
+    margin-bottom: 1.5em;
+}
+
+.infoBlurb p {
+    margin-bottom: 1em;
+    line-height: 1.25em;
 }
 
 .socials {

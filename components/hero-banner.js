@@ -6,8 +6,18 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineSelect } from 'react-icons/ai';
 const HeroBanner = ({lexend}) => {
     return (
         <div className={styles.heroBanner}>
-            <h1>Ryan Bonk,</h1>
+            <h1>Ryan Bonk</h1>
             <h2>Aspiring Software Developer</h2>
+
+            <div className={styles.infoBlurb}>
+                <p>
+                    I’m an Electrical Engineer seeking a career in Software Development. I love system languages and tinkering around with different embedded platforms. I believe that my work should speak for itself, so please feel free to view my project highlights below, or check out my github. 
+                </p>
+                <p>
+                    Let me know how I can help you!
+                </p>
+            </div>
+
             <div className={styles.socials}>
                 <div className={styles.imageContainer}>
                     <Image 

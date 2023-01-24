@@ -16,7 +16,7 @@ const Projects = () => {
 
     return (
         <div className={styles.projectContainer}>
-            <h2>Projects</h2>
+            <h2 className={styles.sticky}>Projects</h2>
             <div className={styles.projects}>
                 {getProjects()}
             </div>
