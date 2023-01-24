@@ -1,0 +1,11 @@
+.contactForm label {
+    display: block;
+}
+
+.contactForm label input {
+    display: block;
+}
+
+.contactForm label textarea {
+    display: block;
+}

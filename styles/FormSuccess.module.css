@@ -1,0 +1,33 @@
+.formSuccess {
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 1; */
+    /* transition: opacity 2s ease-in-out; */
+
+    border: 1px solid red;
+}
+
+
+/* @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5); 
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+} */
+
+/* @keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+} */
+
