@@ -1,0 +1,95 @@
+.sticky {
+    position: sticky;
+    top: 0px;
+}
+
+.experience {
+    width: 100%;
+    margin-top: 50px;
+    padding: 24px;
+}
+
+.experience h2 {
+    padding-top: 10px;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+
+.job {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.jobCompany {
+    width: 300px;
+}
+
+.jobCompany span {
+    display: block;
+}
+
+.jobCompany span:first-of-type {
+    color: #fff;
+    font-weight: 500;
+}
+
+.jobCompany .date {
+    margin-bottom: 20px;
+}
+
+.jobDescription {
+    margin-bottom: 55px;
+    max-width: 500px;
+}
+
+.jobDescription h3 {
+    padding-bottom: 12px;
+}
+
+.jobDescription p {
+    padding-bottom: 12px;
+}
+
+.companyLink {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    color: #dadada;
+    cursor: pointer;
+}
+
+.companyLink span {
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+    .jobCompany {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .jobCompany {
+        position: relative;
+        border-right: 2px solid gray;
+    }
+
+    .jobDescription {
+        padding-left: 40px;
+    }
+
+    .jobCompany::after {
+        content: ' ';
+        /* width: 10px;
+        height: 10px; */
+        position: absolute;
+        top: 0;
+        right: -10.75px;
+        background-color: gray;
+        border: 10px solid gray;
+        border-radius: 999px;
+    }
+
+}

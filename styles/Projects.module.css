@@ -1,0 +1,21 @@
+.sticky {
+    position: sticky;
+    top: 0px;
+}
+
+.projectContainer {
+    width: 100%;
+    padding: 24px;
+}
+
+.projectContainer h2 {
+    padding-top: 10px;
+    z-index: 2;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
