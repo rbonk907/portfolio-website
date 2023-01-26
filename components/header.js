@@ -43,12 +43,11 @@ const getHeader = (isMobile, scrollOffset) => {
 };
 
 const Header = ({ isMobile }) => {
-    const [scrollHeight, setScrollHeight] = useState(0);
+    const [scrollHeight, setScrollHeight] = useState(-1);
     // let vh = 0;    
 
     useEffect(() => {
         window.addEventListener("scroll", getScrollHeight);
-        getScrollHeight();
 
         return () => {
             window.removeEventListener("scroll", getScrollHeight);
@@ -59,6 +58,7 @@ const Header = ({ isMobile }) => {
         const element = document.getElementById('projects');
         const elementPosition = element.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset;
+
         setScrollHeight(window.scrollY - offsetPosition);
     }
 
