@@ -1,5 +1,9 @@
 .contactForm label {
     display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    color: #fff;
 }
 
 .contactForm label input {
@@ -8,4 +12,57 @@
 
 .contactForm label textarea {
     display: block;
+}
+
+.contactForm input {
+    border: 1px solid rgba(255,255,255,0.1);
+    outline: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    appearance: none;
+    overflow: visible;
+}
+
+.contactForm textarea {
+    border: 1px solid rgba(255,255,255,0.1);
+    outline: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    height: 240px;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,0.3);
+    appearance: none;
+    overflow: visible;
+    resize: none;
+}
+
+.contactForm input:focus, 
+.contactForm textarea:focus {
+    background-color: #fff;
+}
+
+.contactForm button {
+    border-radius: 100px;
+    padding: 20px 60px;
+    font-size: 12px;
+    letter-spacing: .125em;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    overflow: hidden;
+    border: none;
+
+    width: 250px;
+    height: 54px;
+}
+
+.contactForm button:disabled {
+    background: rgba(255, 255, 255, 0.486);
+    
 }

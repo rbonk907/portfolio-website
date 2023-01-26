@@ -5,17 +5,26 @@
 
 .headerContainer {
     z-index: 1;
+    max-width: 1700px;
+    margin: 0 auto;
 }
 
 .header {
-    /* position: sticky; */
-    /* top: 0px; */
     height: 50px;
     display: flex;
     justify-content: flex-end;
     width: 100%;
     background-color: inherit;
-    border: 1px solid red;
+    padding-top: 10px;
+    padding-right: 10px;
+    color: rgba(255, 255, 255, 0.795);
+    /* border: 1px solid red; */
+}
+
+.mailIcon {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
 }
 
 .mobileHeader {
@@ -50,6 +59,32 @@
 .menu li {
     padding: 10px 20px;
     list-style-type: none;
+    cursor: pointer;
+}
+
+.menu li:last-of-type {
+    display: flex;
+    align-items: flex-start;
+}
+
+.headerLink {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.headerLink::after {
+    content: ' ';
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    width: 0;
+    height: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.795);
+    background-color: black;
+    
+    /* transform-origin: left; */
+    transition: width .3s ease-in-out;
 }
 
 .menu a:link,
@@ -58,24 +93,10 @@
     color: black;
 }
 
-.menu li:hover {
-    background-color: rgba(180, 180, 180, 0.336);
-    border-bottom: 2px solid rgb(62, 62, 240);
+/* .menu li:hover {
+    font-weight: bold;
+} */
 
-}
-
-.menu li:last-of-type {
-    background-color: blue;
-}
-
-.menu li:last-of-type:hover {
-    background-color: rgba(180, 180, 180, 0.336);
-    border-bottom: 2px solid rgb(62, 62, 240);
-}
-
-.menu a.resume:link, 
-.menu a.resume:visited {
-    color:#FFF;
-    padding: 5px;
-    padding-bottom: 10px;
+.menu li:hover .headerLink::after {
+    width: 100%;
 }

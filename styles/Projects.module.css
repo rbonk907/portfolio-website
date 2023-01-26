@@ -5,6 +5,7 @@
 
 .projectContainer {
     width: 100%;
+    padding: 24px;
 }
 
 .projectContainer h2 {
@@ -15,6 +16,6 @@
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 2rem;
 }

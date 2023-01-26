@@ -12,11 +12,11 @@ const getProjects = () => {
     return projectList;
 }
 
-const Projects = () => {
+const Projects = ({ isMobile }) => {
 
     return (
         <div className={styles.projectContainer}>
-            <h2 className={styles.sticky}>Projects</h2>
+            <h2 id='projects' className={isMobile ? `${styles.sticky}` : ''}>Projects</h2>
             <div className={styles.projects}>
                 {getProjects()}
             </div>
