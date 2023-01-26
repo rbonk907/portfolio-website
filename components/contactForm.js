@@ -1,7 +1,13 @@
 import styles from '../styles/ContactForm.module.css';
 import { useState } from "react";
 
-const ContactForm = ({ setSuccess }) => {
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join('&');
+}
+
+const ContactForm = ({ success, setSuccess }) => {
     const [contactInfo, setContactInfo] = useState({
         name: '',
         email: '',
@@ -12,16 +18,21 @@ const ContactForm = ({ setSuccess }) => {
         e.preventDefault();
 
         // post info here
+        fetch('/', {
+            method: 'POST',
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...contactInfo })
+        })
+          .then(() => setSuccess(true))
+          .catch(error => console.log(error));
 
-        setSuccess(true);
+        // setSuccess(true);
         
         setContactInfo({
             name: '',
             email: '',
             message: '',
-        });
-
-        
+        });        
     }
 
     const handleChange = (e) => {
@@ -31,7 +42,8 @@ const ContactForm = ({ setSuccess }) => {
     };
     
     return (
-        <form onSubmit={handleSubmit} className={styles.contactForm}>
+        <form name='contact' method='post' data-netlify='true' data-netlify-honeypot='bot-field' onSubmit={handleSubmit} className={styles.contactForm}>
+            <input type='hidden' name='form-name' value='contact' />
             <label>
                 Name 
                 <input type='text' name='name' value={contactInfo.name} onChange={handleChange}/>
@@ -46,7 +58,9 @@ const ContactForm = ({ setSuccess }) => {
                 <textarea name='message' value={contactInfo.message}
                  onChange={handleChange} />
             </label>
-            <button type='submit'>Submit</button>
+            <button disabled={success} type='submit'>
+                {success ? '' : 'Submit Message'}
+            </button>
         </form>
     );
 }
