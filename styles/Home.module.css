@@ -127,10 +127,10 @@
   cursor: pointer;
 }
 
-.topButton:hover {
+/* .topButton:hover {
   transform: scale(1.15);
   transition: transform 0.3s ease-in;
-}
+} */
 
 .topBtnOn {
   transform: translateY(0);
