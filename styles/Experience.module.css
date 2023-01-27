@@ -51,6 +51,11 @@
     padding-bottom: 12px;
 }
 
+.jobDescription p a,
+.jobDescription p a:visited {
+    color: #fff;
+}
+
 .companyLink {
     display: flex;
     align-items: center;

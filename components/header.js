@@ -4,7 +4,6 @@ import scrollTo from '../utility/scrollTo';
 import { AiOutlineMail } from 'react-icons/ai';
 
 const getHeader = (isMobile, scrollOffset) => {
-    console.log(scrollOffset);
     if(isMobile) {
         return (
             <header className={ scrollOffset < 0 ? `${styles.headerOff} 
