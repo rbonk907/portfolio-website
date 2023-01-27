@@ -26,7 +26,7 @@
 
 .heroBanner {
     width: 100%;
-    height: 65vh;
+    /* height: 65vh; */
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -62,7 +62,7 @@
 .socials {
     display: flex;
     align-items: center;
-    /* margin-top: 150px; */
+    margin-top: 30px; 
     width: 100%;
 
     color: #fff;
@@ -111,6 +111,10 @@
         opacity: 0;
         animation: 0.5s ease-in-out 1s fadeup;
         animation-fill-mode: both;
+    }
+
+    .heroBanner {
+        height: 65vh;
     }
 }
 
