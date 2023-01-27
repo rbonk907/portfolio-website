@@ -42,9 +42,12 @@ const Header = ({ isMobile }) => {
 
     useEffect(() => {
         window.addEventListener("scroll", getScrollHeight);
+        window.addEventListener("resize", getScrollHeight);
+        getScrollHeight();
 
         return () => {
             window.removeEventListener("scroll", getScrollHeight);
+            window.removeEventListener("resize", getScrollHeight);
           };
     }, []);
 
@@ -53,7 +56,7 @@ const Header = ({ isMobile }) => {
         const elementPosition = element.getBoundingClientRect().top;
 
         const offsetPosition = elementPosition + window.pageYOffset;
-
+        
         setScrollHeight(window.scrollY - offsetPosition);
     }
 
