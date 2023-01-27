@@ -80,11 +80,6 @@
     cursor: pointer;
 }
 
-/* .socials svg {
-    width: 18px;
-    height: 18px;
-} */
-
 .socials span {
     font-size: 14px;
 }
@@ -108,5 +103,37 @@
 @media only screen and (min-width: 768px) {
     .heroBanner h1 {
         font-size: 64px;
+        animation: 1s ease-in-out 0s fadein;
+    }
+
+    .heroBanner h2 {
+        font-size: 24px;
+        opacity: 0;
+        animation: 0.5s ease-in-out 1s fadeup;
+        animation-fill-mode: both;
+    }
+}
+
+@keyframes fadein {
+    from {
+        transform: translateY(-24px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeup {
+    from {
+        transform: translateY(12px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

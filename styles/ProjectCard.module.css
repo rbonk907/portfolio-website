@@ -2,36 +2,55 @@
     /* border: 1px solid red; */
     background-color: var(--card-bg-color);
     height: fit-content;
-    min-width: 311px;
-    max-width: 400px;
+    max-width: 350px;
+    min-height: 350px;
     /* margin: 0 20px; */
-    margin-bottom: 16px;
+    padding: 16px;
+    
 }
 
 .projectCard h3 {
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     font-size: 24px;
 }
 
 .projectCard p {
-    padding: 1rem 2rem;
+    padding: 1rem 0;
 }
 
-.projectImage {
-    object-fit: cover;
-}
-
-.imageContainer {
+.icons {
+    display: flex;
     width: 100%;
-    height: 200px;
-    position: relative;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    margin-bottom: 1rem;
+    justify-content: space-between;
 }
 
-@media only screen and (min-width: 1024px) {
+.iconLarge {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+
+.tags ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 1rem 0;
+}
+
+.tags ul li {
+    color: var(--main-bg-color);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* @media only screen and (min-width: 1024px) {
     .projectCard {
         margin-right: 20px;
     }
@@ -39,4 +58,4 @@
     .projectCard:last-of-type {
         margin-right: 0;
     }
-}
+} */

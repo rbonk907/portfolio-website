@@ -21,6 +21,8 @@ a {
 body {
   background-color: var(--main-bg-color);
   color: #949495;
+  height: 100dvh;
+  /* overflow: hidden; */
 }
 
 h1, h2, h3 {
@@ -34,5 +36,11 @@ h1, h2, h3 {
 @media only screen and (min-width: 768px) {
   h2 {
     font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    -webkit-overflow-scrolling: touch;
   }
 }
