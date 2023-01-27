@@ -3,20 +3,34 @@ export const projectInfo = {
         {
             id: 1,
             title: "Project 1",
-            description: "Eu nisi anim exercitation minim proident aliqua. Est excepteur occaecat enim in ullamco Lorem commodo exercitation dolor. Et elit velit cupidatat reprehenderit mollit quis deserunt. Ullamco ullamco ea incididunt in cupidatat officia aliqua pariatur fugiat nisi ex. Excepteur labore veniam tempor laboris cillum nostrud qui reprehenderit officia pariatur adipisicing nisi laborum. Enim tempor irure reprehenderit minim. Cupidatat exercitation quis in do sit tempor in amet laboris.",
+            description: "Eu nisi anim exercitation minim proident aliqua. Est excepteur occaecat enim in ullamco Lorem commodo exercitation dolor.",
             imageURL: "/missing-image.webp",
+            gitHubLink: '',
+            tags: [ 'C', 'ARM', 'RTOS' ],
         },
         {
             id: 2,
             title: "Project 2",
-            description: "Eu nisi anim exercitation minim proident aliqua. Est excepteur occaecat enim in ullamco Lorem commodo exercitation dolor. Et elit velit cupidatat reprehenderit mollit quis deserunt. Ullamco ullamco ea incididunt in cupidatat officia aliqua pariatur fugiat nisi ex. Excepteur labore veniam tempor laboris cillum nostrud qui reprehenderit officia pariatur adipisicing nisi laborum. Enim tempor irure reprehenderit minim. Cupidatat exercitation quis in do sit tempor in amet laboris.",
+            description: "Eu nisi anim exercitation minim proident aliqua. Est excepteur occaecat enim in ullamco Lorem commodo exercitation dolor.",
             imageURL: "/missing-image.webp",
+            gitHubLink: '',
+            tags: [ 'C', 'Embedded' ]
         },
         {
             id: 3,
             title: "Project 3",
-            description: "Eu nisi anim exercitation minim proident aliqua. Est excepteur occaecat enim in ullamco Lorem commodo exercitation dolor. Et elit velit cupidatat reprehenderit mollit quis deserunt. Ullamco ullamco ea incididunt in cupidatat officia aliqua pariatur fugiat nisi ex. Excepteur labore veniam tempor laboris cillum nostrud qui reprehenderit officia pariatur adipisicing nisi laborum. Enim tempor irure reprehenderit minim. Cupidatat exercitation quis in do sit tempor in amet laboris.",
+            description: "Eu nisi anim exercitation minim proident aliqua. Est excepteur occaecat enim in ullamco Lorem commodo exercitation dolor.",
             imageURL: "/missing-image.webp",
+            gitHubLink: '',
+            tags: [ 'JavaScript', 'React', 'Frontend', 'Web App' ],
         },
+        {
+            id: 4,
+            title: "Project 4",
+            description: "Eu nisi anim exercitation minim proident aliqua. Est excepteur occaecat enim in ullamco Lorem commodo exercitation dolor.",
+            imageURL: "/missing-image.webp",
+            gitHubLink: '',
+            tags: [ 'JavaScript', 'React', 'Next.js', 'Frontend', 'Web App' ],
+        }
     ]
 }

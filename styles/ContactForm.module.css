@@ -15,6 +15,7 @@
 }
 
 .contactForm input {
+    color: #fff;
     border: 1px solid rgba(255,255,255,0.1);
     outline: none;
     padding: 10px;
@@ -27,6 +28,7 @@
 }
 
 .contactForm textarea {
+    color: #fff;
     border: 1px solid rgba(255,255,255,0.1);
     outline: none;
     padding: 10px;
@@ -42,6 +44,7 @@
 
 .contactForm input:focus, 
 .contactForm textarea:focus {
+    color: black;
     background-color: #fff;
 }
 
