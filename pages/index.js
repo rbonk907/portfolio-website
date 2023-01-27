@@ -62,7 +62,6 @@ export default function Home() {
 
       <main className={`${styles.main}`}>
         <HeroBanner />
-        {/* <Bio lexend={lexend} /> */}
         <Projects isMobile={isMobile}/>
         <Experience isMobile={isMobile} />
         <Contact isMobile={isMobile} />

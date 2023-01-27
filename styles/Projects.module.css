@@ -10,7 +10,7 @@
 
 .projectContainer h2 {
     padding-top: 10px;
-    z-index: 2;
+    z-index: 99;
 }
 
 .projects {
