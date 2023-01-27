@@ -106,13 +106,7 @@
   margin-left: 0.5rem;
 }
 
-.topButtonContainer {
-  position: sticky;
-  bottom: 30px;
-
-  margin-bottom: 30px;
-  margin-right: 30px;
-  
+.topButtonContainer { 
   display: flex;
   justify-content: flex-end;
 }
@@ -121,9 +115,10 @@
   width: 40px;
   height: 40px;
   background-color: #fff;
-  /* margin-top: 20px; */
-  /* border: 1px solid balck;
-  box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.308); */
+  
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
 
   display: flex;
   align-items: center;
@@ -132,20 +127,18 @@
   cursor: pointer;
 }
 
-.topButton:hover {
+/* .topButton:hover {
   transform: scale(1.15);
   transition: transform 0.3s ease-in;
-}
+} */
 
 .topBtnOn {
-  position: relative;
-  bottom: 0px;
+  transform: translateY(0);
   transition: all .2s ease-in-out;
 }
 
 .topBtnOff {
-  position: relative;
-  bottom: -80px;
+  transform: translateY(80px);
   transition: all .2s ease-in-out;
 }
 

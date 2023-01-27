@@ -11,7 +11,7 @@
 
 .experience h2 {
     padding-top: 10px;
-    z-index: 2;
+    z-index: 99;
     margin-bottom: 50px;
 }
 

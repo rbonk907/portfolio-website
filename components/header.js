@@ -4,23 +4,18 @@ import scrollTo from '../utility/scrollTo';
 import { AiOutlineMail } from 'react-icons/ai';
 
 const getHeader = (isMobile, scrollOffset) => {
+    console.log(scrollOffset);
     if(isMobile) {
         return (
             <header className={ scrollOffset < 0 ? `${styles.headerOff} 
                 ${styles.mobileHeader}` : `${styles.headerOn} 
                     ${styles.mobileHeader}`}></header>
-            // <header className={styles.mobileHeader}></header>
         );
     }
 
     return (
         <header className={styles.header}>
             <ul className={styles.menu}>
-                {/* <li>
-                    <a>
-                        <span className={styles.headerLink}>ABOUT</span>
-                    </a>
-                </li> */}
                 <li onClick={() => scrollTo('projects')}>
                     <a>
                         <span className={styles.headerLink}>PROJECTS</span>
@@ -44,7 +39,7 @@ const getHeader = (isMobile, scrollOffset) => {
 
 const Header = ({ isMobile }) => {
     const [scrollHeight, setScrollHeight] = useState(-1);
-    // let vh = 0;    
+        
 
     useEffect(() => {
         window.addEventListener("scroll", getScrollHeight);
@@ -57,6 +52,7 @@ const Header = ({ isMobile }) => {
     const getScrollHeight = () => {
         const element = document.getElementById('projects');
         const elementPosition = element.getBoundingClientRect().top;
+
         const offsetPosition = elementPosition + window.pageYOffset;
 
         setScrollHeight(window.scrollY - offsetPosition);
@@ -64,7 +60,7 @@ const Header = ({ isMobile }) => {
 
 
     return (
-        <div className={ isMobile ? `${styles.sticky} ${styles.headerContainer}` : `${styles.headerContainer}`}>
+        <div className={ isMobile ? `${styles.headerContainer}` : `${styles.headerContainer}`}>
             { getHeader(isMobile, scrollHeight) }
         </div>
     );
