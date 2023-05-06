@@ -1,5 +1,6 @@
 import styles from '../styles/HeroBanner.module.css';
 import profile from '../resources/images/profile-small.png';
+import bannerPhoto from '../public/banner-photo.jpg';
 import Image from 'next/image';
 import scrollTo from '../utility/scrollTo';
 import { AiFillGithub, AiFillLinkedin, AiOutlineSelect } from 'react-icons/ai';
@@ -7,24 +8,12 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineSelect } from 'react-icons/ai';
 const HeroBanner = ({lexend}) => {
     return (
         <div className={styles.heroBanner}>
-            <div>
-                <h1>Ryan Bonk</h1>
-                <h2>Aspiring Software Developer</h2>
-                <div className={styles.infoBlurb}>
-                    <p>
-                        I&apos;m an Electrical Engineer seeking a career in Software Development. I love system languages and tinkering around with different embedded platforms. I believe that my work should speak for itself, so please feel free to view my <span className={styles.link} onClick={() => scrollTo('projects')}>project highlights</span> below, or check out my <a target='_blank' href='https://github.com/rbonk907' rel='noreferrer'><span className={styles.link}>github</span></a>. 
-                    </p>
-                    <p className={styles.link} onClick={() => scrollTo('contact')}>
-                        Let me know how I can help you!
-                    </p>
-                </div>
-            </div>
             <div className={styles.socials}>
-                <div className={styles.imageContainer}>
+                {/* <div className={styles.imageContainer}>
                     <Image 
                         src={profile}
                         alt="Ryan Bonk's headshot" />
-                </div>
+                </div> */}
                 <ul>
                     <li>
                         <a className={`${styles.flex} ${styles.flexCenter}`}
@@ -55,6 +44,35 @@ const HeroBanner = ({lexend}) => {
                     </li>
                 </ul>
             </div>
+            <div className={styles.maxWidth}>
+                <h1>Hi there, I&apos;m Ryan.</h1>
+                <h2><span>Aspiring Full-Stack Developer,</span><span>and Lifelong Student</span></h2>
+                <div className={`${styles.maxWidth} ${styles.overflowXHidden}`}>
+                    <div className={styles.bannerImageContainer}>
+                        <Image src={bannerPhoto} alt="Ryan at his desk" />
+                    </div>
+                </div>
+                
+                <div className={styles.infoBlurb}>
+                    <div className={styles.col1}>
+                        <p >
+                            I&apos;m an Electrical Engineer graduate from the University of Alaska Fairbanks pursuing a career in software development.
+                        </p>
+                        <p>
+                            My love for computers began around the age of 10 when I broke my brother&apos;s Game Boy Color while cracking it open to take a peek inside. I had wished to build a Game Boy of my own and my naive younger self believed I could figure it out if I stared at the circuit long enough. After being completely perplexed by the circuit board and scolded by my brother, I set aside the dream.
+                        </p>
+                    </div>
+                    <div className={styles.col2}>
+                        <p>
+                            Years later, I decided to pursue a degree in Electrical Engineering to unlock the secrets that my 10-year-old self never had a chance to. When I graduated, I realized I had a basic understanding of how the hardware worked, but still little to no understanding of how software worked. With new found determination, I began exploring computer programming and have not looked back.
+                        </p>
+                        <p>
+                            Since then, I have been learning Javascript, SQL, and related technologies for web development. I recently completed the Full-Stack Engineering career path on Codecademy and am no seeking a full-time role where I can continue to hone my skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     );
 };
