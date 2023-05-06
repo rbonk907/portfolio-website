@@ -21,6 +21,9 @@ const ProjectCard = ({ project }) => {
                     })}
                 </ul>
             </div>
+            <div className={styles.status}>
+                {project.isComplete ? '' : <span>In Progress</span>}
+            </div>
         </div>
     )
 }
