@@ -1,0 +1,55 @@
+
+.bulletPoints {
+    clear: none;
+    display: flex;
+}
+
+.liveDemo a {
+    display: block;
+}
+
+.imageContainer {
+    max-width: 1000px;
+    height: auto;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.explanation {
+    clear: right;
+    text-align: right;
+}
+
+.explanation p {
+    text-align: justify;
+}
+
+.stackLogos {
+    float: left;
+}
+
+.logoContainer {
+    width: 50px;
+    height: auto;
+}
+
+.logoContainer img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.problems {
+    clear: both;
+}
+
+@media only screen and (min-width: 769px) {
+    .imageContainer {
+        float: right;
+    }
+}
+
