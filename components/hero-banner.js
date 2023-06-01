@@ -8,38 +8,28 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineSelect } from 'react-icons/ai';
 const HeroBanner = ({lexend}) => {
     return (
         <div className={styles.heroBanner}>
-            <div className={styles.socials}>
-                {/* <div className={styles.imageContainer}>
+            <div className="flex items-center gap-4">
+                <div className="w-16 h-16">
                     <Image 
                         src={profile}
+                        className='rounded-full w-full h-auto'
                         alt="Ryan Bonk's headshot" />
-                </div> */}
-                <ul>
+                </div>
+                <ul className='flex gap-4'>
                     <li>
-                        <a className={`${styles.flex} ${styles.flexCenter}`}
-                            target='_blank' href='https://www.linkedin.com/in/ryan-bonk-ak/' rel='noreferrer' >
-                            <AiFillLinkedin 
-                                className={`${styles.mr16} ${styles.svg18}`} 
-                            />
-                            <span className={styles.textCenter}>
-                                LinkedIn
-                            </span>
-                            <AiOutlineSelect 
-                                className={`${styles.ml8} ${styles.svg12}`}
-                            />
+                        <a 
+                        className='flex items-center gap-2'
+                        target='_blank' href='https://www.linkedin.com/in/ryan-bonk-ak/' rel='noreferrer' >
+                            <AiFillLinkedin className='w-6 h-6' />
+                            <span className='font-bold'>LinkedIn</span>
                         </a>
                     </li>
                     <li>
                         <a 
-                            className={`${styles.flex} ${styles.flexCenter}`}
-                            target='_blank' href='https://github.com/rbonk907' rel='noreferrer' >
-                            <AiFillGithub 
-                                className={`${styles.mr16} ${styles.svg18}`}
-                            />
-                            <span>GitHub</span>
-                            <AiOutlineSelect 
-                                className={`${styles.ml8} ${styles.svg12}`}
-                            />
+                        className='flex items-center gap-2'
+                        target='_blank' href='https://github.com/rbonk907' rel='noreferrer' >
+                            <AiFillGithub className='w-6 h-6' />
+                            <span className='font-bold'>GitHub</span>
                         </a>
                     </li>
                 </ul>
@@ -47,11 +37,11 @@ const HeroBanner = ({lexend}) => {
             <div className={styles.maxWidth}>
                 <h1>Hi there, I&apos;m Ryan.</h1>
                 <h2><span>Aspiring Full-Stack Developer,</span><span>and Lifelong Student</span></h2>
-                <div className={`${styles.maxWidth} ${styles.overflowXHidden}`}>
+                {/* <div className={`${styles.maxWidth} ${styles.overflowXHidden}`}>
                     <div className={styles.bannerImageContainer}>
                         <Image src={bannerPhoto} alt="Ryan at his desk" />
                     </div>
-                </div>
+                </div> */}
                 
                 <div className={styles.infoBlurb}>
                     <div className={styles.col1}>
