@@ -6,7 +6,7 @@
     min-height: 350px;
     /* margin: 0 20px; */
     padding: 16px;
-    
+    position: relative;
 }
 
 .projectCard h3 {
@@ -48,6 +48,29 @@
     padding: 0 10px;
     border-radius: 10px;
     font-size: 14px;
+}
+
+.status {
+    position: absolute;
+    bottom: 20px;
+}
+
+.status span {
+    color: orange;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.status span::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(255, 205, 25);
+    margin-right: 10px;
+    margin-bottom: 1.7px;
+    box-shadow: 0 0 2px 3px rgb(255, 178, 25);
 }
 
 /* @media only screen and (min-width: 1024px) {

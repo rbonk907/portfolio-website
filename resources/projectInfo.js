@@ -2,35 +2,34 @@ export const projectInfo = {
     projects: [
         {
             id: 1,
-            title: "Project 1",
-            description: "Eu nisi anim exercitation minim proident aliqua. Est excepteur occaecat enim in ullamco Lorem commodo exercitation dolor.",
+            title: "Reddit + Redux",
+            href: "/projects/redditRedux",
+            description: "Minimalistic frontend application to display information from the Reddit JSON API",
             imageURL: "/missing-image.webp",
-            gitHubLink: '',
-            tags: [ 'C', 'ARM', 'RTOS' ],
+            gitHubLink: 'https://github.com/rbonk907/reddit-api-project',
+            tags: [ 'React', 'Redux', 'TypeScript' ],
+            isComplete: true
         },
         {
             id: 2,
-            title: "Project 2",
-            description: "Eu nisi anim exercitation minim proident aliqua. Est excepteur occaecat enim in ullamco Lorem commodo exercitation dolor.",
+            title: "Dev Doodles",
+            href: "",
+            description: "Full-stack e-commerce application selling software related decals. Connects to a PostgreSQL database and allows users to sign-up, and login with Oauth2.0. Users can select from a range of stickers and add them to a shopping cart",
             imageURL: "/missing-image.webp",
             gitHubLink: '',
-            tags: [ 'C', 'Embedded' ]
+            tags: [ 'PostgreSQL', 'ExpressJS', 'React', 'Node.js' ],
+            isComplete: true
         },
         {
             id: 3,
-            title: "Project 3",
-            description: "Eu nisi anim exercitation minim proident aliqua. Est excepteur occaecat enim in ullamco Lorem commodo exercitation dolor.",
+            title: "Game Boy Emulator",
+            href: "",
+            description: "Game Boy emulations have been done numerous times, but this one is mine. Written in C and uses SDL for window management",
             imageURL: "/missing-image.webp",
             gitHubLink: '',
-            tags: [ 'JavaScript', 'React', 'Frontend', 'Web App' ],
-        },
-        {
-            id: 4,
-            title: "Project 4",
-            description: "Eu nisi anim exercitation minim proident aliqua. Est excepteur occaecat enim in ullamco Lorem commodo exercitation dolor.",
-            imageURL: "/missing-image.webp",
-            gitHubLink: '',
-            tags: [ 'JavaScript', 'React', 'Next.js', 'Frontend', 'Web App' ],
+            tags: [ 'C', 'SDL', 'CMake'],
+            isComplete: false
         }
+        
     ]
 }
