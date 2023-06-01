@@ -67,7 +67,7 @@ const HeroBanner = ({lexend}) => {
                             Years later, I decided to pursue a degree in Electrical Engineering to unlock the secrets that my 10-year-old self never had a chance to. When I graduated, I realized I had a basic understanding of how the hardware worked, but still little to no understanding of how software worked. With new found determination, I began exploring computer programming and have not looked back.
                         </p>
                         <p>
-                            Since then, I have been learning Javascript, SQL, and related technologies for web development. I recently completed the Full-Stack Engineering career path on Codecademy and am no seeking a full-time role where I can continue to hone my skills.
+                            Since then, I have been learning Javascript, SQL, and related technologies for web development. I recently completed the Full-Stack Engineering career path on Codecademy and am now seeking a full-time role where I can continue to hone my skills.
                         </p>
                     </div>
                 </div>

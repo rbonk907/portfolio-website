@@ -74,9 +74,9 @@
     /* max-width: 500px; */
 }
 
-.col1 p:first-of-type {
+/* .col1 p:first-of-type {
     margin-bottom: 2em;
-}
+} */
 
 .col1 {
     margin-right: 15px;
@@ -137,17 +137,17 @@
 }
 
 .bannerImageContainer img {
-    width: 100%;
+    width: 1700px;
     height: auto;
     display: block;
     position: absolute;
-    bottom: -150px;
+    bottom: -300px;
 }
 
 .bannerImageContainer {
     position: relative;
-    width: clamp(500px, 1200px, 1300px);
-    height: 400px;
+    width: clamp(500px, 1700px, 1700px);
+    height: 450px;
     overflow: hidden;
 }
 
@@ -166,6 +166,10 @@
 
     .infoBlurb {
         flex-wrap: wrap;
+    }
+
+    .bannerImageContainer img {
+        left: -250px;
     }
 }
 
