@@ -12,12 +12,12 @@ export const projectInfo = {
         },
         {
             id: 2,
-            title: "E-Commerce REST API",
+            title: "Dev Doodles",
             href: "",
-            description: "RESTful API for a fake e-commerce site selling software related decals. Connects to a PostgreSQL database and allows users to sign-up, and login with Oauth2.0. Users can select from a range of stickers and add them to a shopping cart",
+            description: "Full-stack e-commerce application selling software related decals. Connects to a PostgreSQL database and allows users to sign-up, and login with Oauth2.0. Users can select from a range of stickers and add them to a shopping cart",
             imageURL: "/missing-image.webp",
             gitHubLink: '',
-            tags: [ 'NodeJS', 'ExpressJS', 'PostgreSQL' ],
+            tags: [ 'PostgreSQL', 'ExpressJS', 'React', 'Node.js' ],
             isComplete: true
         },
         {
