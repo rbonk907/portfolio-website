@@ -4,7 +4,7 @@ import Link from 'next/link';
 const ProjectCard = ({ project }) => {
     return (
         <Link href={project.href}>
-            <div className='bg-slate-100 p-6 max-w-sm min-h-[375px] flex flex-col gap-2 md:shadow-lg md:shadow-slate-400'>
+            <div className='bg-slate-100 p-6 max-w-sm min-h-[375px] flex flex-col gap-2 shadow-lg shadow-slate-400'>
                 <div className='flex justify-between'>
                         <AiOutlineFolder className='w-6 h-6' />
                         <AiOutlineGithub className='w-6 h-6' />
