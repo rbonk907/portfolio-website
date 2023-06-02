@@ -1,6 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 import Header from '../components/header';
 import HeroBanner from '../components/hero-banner';
 import Projects from '../components/projects';
@@ -48,6 +46,8 @@ export default function Home() {
       behavior: 'smooth'
     });
   }
+
+  const topButtonOffset = scrollHeight < 0 ? 'translate-y-[80px] transition duration-200' : 'translate-y-0 transition duration-200'
   
   return (
     <div>
@@ -60,39 +60,21 @@ export default function Home() {
       
       <Header isMobile={ isMobile }/>
 
-      <main className={`${styles.main}`}>
+      <main className='min-h-screen mx-auto max-w-screen-2xl'>
         <HeroBanner />
-        <Projects isMobile={isMobile}/>
-        <Experience isMobile={isMobile} />
-        <Contact isMobile={isMobile} />
+        <Projects />
+        <Experience />
+        <Contact />
       </main>
 
-      <div className={styles.topButtonContainer}>
-        <div className={ scrollHeight < 0 ? `${styles.topButton} ${styles.topBtnOff}` : `${styles.topButton} ${styles.topBtnOn}`} onClick={() => scrollToTop()} >
+      <div className='flex justify-end'>
+        <div className={`${topButtonOffset} w-10 h-10 fixed bottom-4 right-4 bg-blue-300 flex items-center justify-center text-center cursor-pointer`} onClick={() => scrollToTop()} >
           <AiOutlineUp />
         </div>
       </div>
       
 
       <Footer />
-
-      
-
-      
-
-
-      {/* <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer> */}
     </div>
   )
 };

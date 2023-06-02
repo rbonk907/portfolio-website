@@ -1,34 +1,33 @@
-import styles from '../styles/Header.module.css';
 import { useEffect, useState } from 'react';
 import scrollTo from '../utility/scrollTo';
 import { AiOutlineMail } from 'react-icons/ai';
 
 const getHeader = (isMobile, scrollOffset) => {
     if(isMobile) {
+        const offsetStyle = scrollOffset < 0 ? "transition duration-200 -translate-y-[60px]" : "transition duration-200 translate-y-0"
         return (
-            <header className={ scrollOffset < 0 ? `${styles.headerOff} 
-                ${styles.mobileHeader}` : `${styles.headerOn} 
-                    ${styles.mobileHeader}`}></header>
+            <header className={ `${offsetStyle} fixed top-0 w-full h-[50px] bg-slate-100 shadow-lg shadow-slate-400 z-40`} >
+            </header>
         );
     }
 
     return (
-        <header className={styles.header}>
-            <ul className={styles.menu}>
-                <li onClick={() => scrollTo('projects')}>
+        <header className='relative h-[50px] flex justify-end px-6 bg-slate-100 z-40 max-w-screen-2xl mx-auto'>
+            <ul className='flex items-center gap-6'>
+                <li onClick={() => scrollTo('projects')} className='cursor-pointer'>
                     <a>
-                        <span className={styles.headerLink}>PROJECTS</span>
+                        <span className=''>PROJECTS</span>
                     </a>
                 </li>
-                <li onClick={() => scrollTo('experience')}>
+                <li onClick={() => scrollTo('experience')} className='cursor-pointer'>
                     <a>
-                        <span className={styles.headerLink}>EXPERIENCE</span>
+                        <span className=''>EXPERIENCE</span>
                     </a>
                 </li>
-                <li onClick={() => scrollTo('contact')}>
+                <li onClick={() => scrollTo('contact')} className='flex items-center cursor-pointer'>
                     
-                    <AiOutlineMail className={styles.mailIcon}/>
-                    <span className={styles.headerLink}>GET IN TOUCH</span>
+                    <AiOutlineMail className='w-4 h-4 mr-2' />
+                    <span className='block'>GET IN TOUCH</span>
                     
                 </li>
             </ul>
@@ -59,9 +58,9 @@ const Header = ({ isMobile }) => {
 
 
     return (
-        <div className={ isMobile ? `${styles.headerContainer}` : `${styles.headerContainer}`}>
+        <>
             { getHeader(isMobile, scrollHeight) }
-        </div>
+        </>
     );
 };
 
