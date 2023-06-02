@@ -15,7 +15,7 @@ const Projects = () => {
 
     return (
         <div className='p-6'>
-            <h2 id='projects' className='sticky top-0 pt-2 text-2xl font-extrabold md:static'>Projects</h2>
+            <h2 id='projects' className='sticky top-0 pt-2 text-2xl font-extrabold z-50 md:static'>Projects</h2>
             <div className='flex flex-wrap justify-center gap-5 mt-8'>
                 {getProjects()}
             </div>

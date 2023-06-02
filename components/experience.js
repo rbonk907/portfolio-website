@@ -3,7 +3,7 @@ import { AiOutlineLink } from 'react-icons/ai';
 const Experience = () => {
     return (
         <div className='p-6 mt-12 bg-slate-100 shadow-top shadow-slate-400'>
-            <h2 id='experience' className='sticky top-0 text-2xl font-extrabold mb-12 md:static'>Experience</h2>
+            <h2 id='experience' className='sticky top-0 pt-2 text-2xl font-extrabold mb-12 z-50 md:static'>Experience</h2>
             <div>
                 <div className='flex flex-wrap'>
                     <div className='pb-3 min-w-[20rem]'>

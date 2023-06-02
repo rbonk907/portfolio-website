@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] });
 const HeroBanner = () => {
     
     return (
-        <div className="bg-slate-100 shadow-lg shadow-slate-400 p-6 flex flex-col max-w-screen-2xl">
+        <div className="bg-slate-100 shadow-lg shadow-slate-400 p-6 flex flex-col max-w-screen-2xl z-10">
             {/* socials */}
             <div className="flex items-center gap-4 order-3 md:-order-1 py-6">
                 <div className="w-16 h-16 md:hidden">
