@@ -14,17 +14,17 @@ const getHeader = (isMobile, scrollOffset) => {
     return (
         <header className='relative h-[50px] flex justify-end px-6 bg-slate-100 z-40'>
             <ul className='flex items-center gap-6'>
-                <li onClick={() => scrollTo('projects')}>
+                <li onClick={() => scrollTo('projects')} className='cursor-pointer'>
                     <a>
                         <span className=''>PROJECTS</span>
                     </a>
                 </li>
-                <li onClick={() => scrollTo('experience')}>
+                <li onClick={() => scrollTo('experience')} className='cursor-pointer'>
                     <a>
                         <span className=''>EXPERIENCE</span>
                     </a>
                 </li>
-                <li onClick={() => scrollTo('contact')} className='flex items-center'>
+                <li onClick={() => scrollTo('contact')} className='flex items-center cursor-pointer'>
                     
                     <AiOutlineMail className='w-4 h-4 mr-2' />
                     <span className='block'>GET IN TOUCH</span>
