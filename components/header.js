@@ -12,7 +12,7 @@ const getHeader = (isMobile, scrollOffset) => {
     }
 
     return (
-        <header className='relative h-[50px] flex justify-end px-6 bg-slate-100 z-40'>
+        <header className='relative h-[50px] flex justify-end px-6 bg-slate-100 z-40 max-w-screen-2xl mx-auto'>
             <ul className='flex items-center gap-6'>
                 <li onClick={() => scrollTo('projects')} className='cursor-pointer'>
                     <a>

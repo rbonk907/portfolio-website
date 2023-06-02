@@ -1,15 +1,14 @@
-import styles from '../styles/Footer.module.css';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 const Footer = () => {
     return (
-        <footer className={styles.footer}>
-            <div className={styles.socials}>
+        <footer className='py-6 bg-slate-100'>
+            <div className='flex items-center justify-start pl-8 max-w-screen-2xl mx-auto'>
                 <a target='_blank' href='https://www.linkedin.com/in/ryan-bonk-ak/' rel='noreferrer' >
-                    <AiFillLinkedin className={`${styles.svg20} ${styles.mr16}`} />
+                    <AiFillLinkedin className='mr-4 w-6 h-6' />
                 </a>
                 <a target='_blank' href='https://github.com/rbonk907' rel='noreferrer'>
-                    <AiFillGithub className ={styles.svg20} />
+                    <AiFillGithub className='w-6 h-6' />
                 </a>
             </div>
         </footer>

@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
-import styles from '../styles/Contact.module.css';
 import ContactForm from './contactForm';
 import FormSuccess from './formSuccess';
 
-const Contact = ({ isMobile }) => {
+const Contact = () => {
     const [success, setSuccess] = useState(false);
 
     useEffect(() => {
