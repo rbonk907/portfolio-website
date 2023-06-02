@@ -57,7 +57,7 @@ const HeroBanner = () => {
             
             
             <div className='text-md text-justify flex flex-wrap justify-center gap-x-10 order-4 w-full'>
-                <div className='min-w-[24rem] max-w-2xl flex-1'>
+                <div className='min-w-[20rem] max-w-2xl flex-1'>
                     <p className='py-3'>
                         I&apos;m an Electrical Engineer graduate from the University of Alaska Fairbanks pursuing a career in software development.
                     </p>
@@ -65,7 +65,7 @@ const HeroBanner = () => {
                         My love for computers began around the age of 10 when I broke my brother&apos;s Game Boy Color while cracking it open to take a peek inside. I had wished to build a Game Boy of my own and my naive younger self believed I could figure it out if I stared at the circuit long enough. After being completely perplexed by the circuit board and scolded by my brother, I set aside the dream.
                     </p>
                 </div>
-                <div className='min-w-[24rem] max-w-2xl flex-1'>
+                <div className='min-w-[20rem] max-w-2xl flex-1'>
                     <p className='py-3'>
                         Years later, I decided to pursue a degree in Electrical Engineering to unlock the secrets that my 10-year-old self never had a chance to. When I graduated, I realized I had a basic understanding of how the hardware worked, but still little to no understanding of how software worked. With new found determination, I began exploring computer programming and have not looked back.
                     </p>
