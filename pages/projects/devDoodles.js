@@ -30,11 +30,11 @@ export default function DevDoodlesPage() {
                     </div>
                     <div>
                         <span className="block font-bold pb-4">Live</span>
-                        <a href="https://frontend-dev-doodles.onrender.com/" target="_blank" className="font-bold text-blue-500 flex items-center gap-3 mb-3">
+                        <a href="https://frontend-dev-doodles.onrender.com/" target="_blank" rel="noreferrer" className="font-bold text-blue-500 flex items-center gap-3 mb-3">
                             <span>View Site</span>
                             <BsBoxArrowUpRight className="stroke-1 w-[18px] h-[18px]" />
                         </a>
-                        <a href="https://github.com/rbonk907/dev-doodles/" target="_blank" className="font-bold text-blue-500 flex items-center gap-3">
+                        <a href="https://github.com/rbonk907/dev-doodles/" target="_blank" rel="noreferrer" className="font-bold text-blue-500 flex items-center gap-3">
                             <span>Github Repo</span>
                             <BsBoxArrowUpRight className="stroke-1 w-[18px] h-[18px]" />
                         </a>

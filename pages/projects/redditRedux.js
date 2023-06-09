@@ -29,7 +29,7 @@ export default function RedditRedux() {
                     </div>
                     <div>
                         <span className="block font-bold pb-4">Code</span>
-                        <a href="https://github.com/rbonk907/reddit-api-project" target="_blank" className="font-bold text-blue-500 flex items-center gap-3">
+                        <a href="https://github.com/rbonk907/reddit-api-project" target="_blank" rel="noreferrer" className="font-bold text-blue-500 flex items-center gap-3">
                             <span>Github Repo</span>
                             <BsBoxArrowUpRight className="stroke-1 w-[18px] h-[18px]" />
                         </a>
