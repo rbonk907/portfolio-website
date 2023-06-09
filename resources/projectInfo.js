@@ -3,7 +3,7 @@ export const projectInfo = {
         {
             id: 1,
             title: "Dev Doodles",
-            href: "",
+            href: "/projects/devDoodles",
             description: "Full-stack e-commerce application selling software related decals. Connects to a PostgreSQL database and allows users to sign-up, and login with Oauth2.0. Users can select from a range of stickers and add them to a shopping cart",
             imageURL: "/missing-image.webp",
             gitHubLink: '',
