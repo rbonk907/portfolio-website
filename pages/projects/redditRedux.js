@@ -14,7 +14,7 @@ export default function RedditRedux() {
         <ProjectLayout>
             <section className="w-full flex flex-col items-start py-8 px-6 md:px-20 bg-slate-100 shadow-lg shadow-slate-400">
                 <h1 className="text-5xl font-extrabold">Reddit + Redux</h1>
-                <p className="text-justify max-w-4xl text-sm leading-6 py-6">
+                <p className="text-justify max-w-4xl py-6">
                     Reddit + Redux is a React application built as a minimalistic reddit application. The project was written using React, Redux, and the Reddit JSON API.
                 </p>
                 <div className="flex flex-row">
@@ -57,7 +57,7 @@ export default function RedditRedux() {
                             <Image src={netlifyLogo} alt={"Netlify Logo"} className="w-auto h-full" />
                         </div>
                     </div>
-                    <div className="text-justify text-sm leading-6 max-w-2xl flex-1 min-w-[300px]">
+                    <div className="text-justify max-w-2xl flex-1 min-w-[300px]">
                         <p className="pb-8">
                             Going into this project, I knew there would be a lot of state variables related to different subreddits and posts received from the reddit JSON API, so I wanted to use Redux as a reliable state management tool. This in turn made me choose React due to the smooth workflow between Redux and the official React bindings, React-Redux.
                         </p>
@@ -74,8 +74,8 @@ export default function RedditRedux() {
             
             <section className="w-full flex flex-col items-start py-8 px-6 md:px-20">
                 <h2 className="text-3xl font-extrabold pb-6">Problems and Thought Process</h2>
-                <div className="text-justify text-sm leading-6 max-w-2xl">
-                    <p>
+                <div className="text-justify max-w-2xl">
+                    <p className="pb-8">
                         Like all worthwhile projects, there will be challenges and hiccups along the way. Due to the project&apos;s size and amount of data provided by Reddit, I ran into difficulty keeping an organized and maintainable code structure.
                     </p>
                     <p>
@@ -86,6 +86,9 @@ export default function RedditRedux() {
             
             <section className="w-full flex flex-col items-center py-8 px-6 md:px-20">
                 <h2 className="text-3xl font-extrabold pb-6">Lessons Learned</h2>
+                <p className="text-justify max-w-4xl">
+                    Early on I decided that I would use CSS class modules for styling the website, so that I could contain CSS to individual components. I was quickly humbled by how easy it is to make chaotic and large CSS files that are difficult to debug when one small component is not positioning correctly. Writing elegant CSS is truly an art form and I would not dare say I achieved elegance with mine, but I learned a valuable lesson on trying to keep CSS files as simple as possible.
+                </p>
             </section>
 
             <section className="w-full flex flex-col items-start py-8 px-6 md:px-20">
