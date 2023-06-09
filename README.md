@@ -1,9 +1,10 @@
 # My Portfolio Website
 
+### Hosted on Netlify and viewable at the following domain: [ryanbonk.dev](https://ryanbonk.dev)
+
+### Version 2.0
+Written in Next.js and styles with Tailwind CSS
+
 &nbsp;
 
-## Hosted on Netlify and viewable at the following domain: [ryanbonk.dev](https://ryanbonk.dev)
-
-&nbsp;
-
-![screenshot of website](./resources/images/website-screenshot.png)
+![screenshot of website](./resources/images/website-screenshot-2_0.png)
